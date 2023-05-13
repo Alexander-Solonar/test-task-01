@@ -3,8 +3,8 @@
   "description": "",
   "homepage": "https://github.com/Alexander-Solonar/test-task-01/",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /test-task-01/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
