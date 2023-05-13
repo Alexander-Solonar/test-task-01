@@ -1,10 +1,16 @@
 {
-  "homepage": "https://github.com/Alexander-Solonar/test-task/",
+  "name": "test-task-01",
+  "description": "",
+  "homepage": "https://github.com/Alexander-Solonar/test-task-01/",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alexander-Solonar/test-task-01.git/"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",
