@@ -1,0 +1,22 @@
+.container {
+  padding: 0 15px;
+  // outline: 2px dashed red;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+
+  // @include mobile-up {
+  //   width: 414px;
+  // }
+
+  // @include tablet-up {
+  //   width: 1024px;
+  //   padding-left: 47px;
+  //   padding-right: 47px;
+  // }
+
+  @include desktop-up {
+    width: 1230px;
+  }
+}

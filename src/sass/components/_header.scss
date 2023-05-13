@@ -1,0 +1,150 @@
+.header {
+  padding-top: 46px;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $color-text-primary;
+}
+
+.logo-icon--orange {
+  fill: $color-orange;
+}
+
+.logo-icon--green {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  fill: $color-green;
+}
+
+.menu {
+  display: flex;
+  column-gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    column-gap: 55px;
+  }
+}
+
+.navigation {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  column-gap: 25px;
+}
+
+.navigation__link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 18px;
+
+  font-size: 14px;
+  line-height: 1.28;
+
+  border: 1px solid $bg-border;
+  border-radius: 32px;
+  color: $bg-light;
+  background-color: $bg-button;
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $color-button-dark;
+    background-color: $color-button-light;
+  }
+}
+
+.navigation__link--menu {
+  position: relative;
+  padding-right: 44px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(135deg);
+  }
+  &.is-open::after {
+    top: 15px;
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation__sub-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding: 20px;
+  color: $color-text-primary;
+  border-radius: 10px;
+  background-color: $color-white;
+}
+
+.btn-open-modal {
+  padding: 12px 24px;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+
+  border-radius: 32px;
+  border: none;
+  color: $color-button-dark;
+  background: $color-button-light;
+
+  &:hover,
+  &:focus {
+    color: $color-button-light;
+    background-color: $color-button-dark;
+  }
+}
+
+.btn-open-mobile-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  fill: $color-text-primary;
+  background-color: transparent;
+  transition: fill 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    fill: $color-button-dark;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
