@@ -1,5 +1,8 @@
 .section-hero {
-  padding: 95px 0;
+  position: relative;
+  padding-top: 95px;
+  padding-bottom: 120px;
+  min-height: 634px;
 }
 
 .hero__content {
@@ -7,21 +10,24 @@
 }
 
 .hero__titel {
+  display: inline-block;
+  max-width: 360px;
   margin-bottom: 25px;
 
   font-weight: 600;
   font-size: 40px;
   line-height: 1.25;
   text-transform: capitalize;
-  color: #1b1c57;
+  color: $color-violet-primary;
 }
 
 .hero__titel--decor {
-  text-shadow: 0px 1px 0 #1b1c57, 0px -1px 0 #1b1c57, 1px 0px 0 #1b1c57,
-    -1px 0px 0#1b1c57, 1px 1px 0 #1b1c57, 1px -1px 0 #1b1c57, -1px 1px 0 #1b1c57,
-    -1px -1px 0 #1b1c57;
+  text-shadow: 0px 1px 0 $color-violet-primary, 0px -1px 0 $color-violet-primary,
+    1px 0px 0 $color-violet-primary, -1px 0px 0$color-violet-primary,
+    1px 1px 0 $color-violet-primary, 1px -1px 0 $color-violet-primary,
+    -1px 1px 0 $color-violet-primary, -1px -1px 0 $color-violet-primary;
 
-  color: rgb(255, 255, 255);
+  color: $color-white;
 }
 
 .hero__text {
@@ -31,7 +37,7 @@
   font-size: 16px;
   line-height: 1.75x;
 
-  color: #626687;
+  color: $color-violet-third;
   opacity: 0.75;
 }
 
@@ -71,7 +77,7 @@
   border: none;
   border-radius: 32px;
   background: #10b981;
-  color: #ffffff;
+  color: $color-white;
   transition: background-color 250ms $cubic-bezier;
 
   &::after {
@@ -100,21 +106,25 @@
   color: #888b97;
 }
 
-.main-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
 .color-blur {
   position: absolute;
-  top: 0;
+  top: -90px;
   left: 0;
   z-index: -1;
 }
 
-// .partner-logo {
-//   display: flex;
-//   column-gap: 32px;
-// }
+.hero__partner {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.partner-logo {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  max-width: 427px;
+}

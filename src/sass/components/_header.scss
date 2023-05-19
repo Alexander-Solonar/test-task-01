@@ -1,5 +1,5 @@
 .header {
-  padding-top: 46px;
+  padding-top: 40px;
 }
 
 .container-header {
@@ -18,7 +18,7 @@
   font-size: 16px;
   line-height: 1.25;
 
-  color: $color-text-primary;
+  color: $color-violet-primary;
 }
 
 .logo-icon--orange {
@@ -104,7 +104,7 @@
   flex-direction: column;
   row-gap: 12px;
   padding: 20px;
-  color: $color-text-primary;
+  color: $color-violet-primary;
   border-radius: 10px;
   background-color: $color-white;
 }
@@ -135,7 +135,7 @@
   align-items: center;
   border: none;
   cursor: pointer;
-  fill: $color-text-primary;
+  fill: $color-violet-primary;
   background-color: transparent;
   transition: fill 250ms $cubic-bezier;
 

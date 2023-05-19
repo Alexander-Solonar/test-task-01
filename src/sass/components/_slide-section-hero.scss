@@ -1,0 +1,40 @@
+.hero__swiper {
+  position: absolute;
+  right: 0;
+  top: 500px;
+  max-width: 672px;
+  height: 104px;
+  overflow: hidden;
+}
+
+.hero__swiper-slide {
+  width: auto;
+  background-color: $color-white;
+  box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
+  border-radius: 32px;
+}
+
+.box-inform {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 15px;
+
+  padding: 24px;
+}
+
+.box-inform__user-avatar {
+  border-radius: 50%;
+}
+
+.box-inform__fitback {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-violet-primary;
+}
+
+.box-inform__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: $color-violet-secondary;
+}
