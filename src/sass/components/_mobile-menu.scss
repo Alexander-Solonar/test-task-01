@@ -5,12 +5,12 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  fill: $color-button-dark;
+  fill: $color-green-primary;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    fill: $color-button-light;
+    fill: $color-green-fourth;
   }
 }
 
@@ -19,7 +19,7 @@
   top: 70px;
   left: 15%;
   width: 70%;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); ///!!!!!!!!!!!!!!!!!!!!
   border-radius: 20px;
   z-index: 1;
   overflow-y: scroll;
@@ -35,7 +35,7 @@
 .mobile-menu__container {
   text-align: center;
   padding: 48px 0;
-  background-color: $color-white;
+  background-color: $color-white-primary;
 }
 
 .mobile-nav {

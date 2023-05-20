@@ -9,14 +9,15 @@
 
 .hero__swiper-slide {
   width: auto;
-  background-color: $color-white;
-  box-shadow: 0px 11px 48px rgba(51, 51, 51, 0.06);
+  background-color: $color-white-primary;
+  box-shadow: 0px 11px 48px $color-dark-secondary;
   border-radius: 32px;
 }
 
 .box-inform {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   column-gap: 15px;
 
   padding: 24px;
@@ -28,13 +29,14 @@
 
 .box-inform__fitback {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: $color-violet-primary;
 }
 
 .box-inform__text {
+  max-width: 152px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.66;
   color: $color-violet-secondary;
 }

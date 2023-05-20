@@ -27,7 +27,7 @@
     1px 1px 0 $color-violet-primary, 1px -1px 0 $color-violet-primary,
     -1px 1px 0 $color-violet-primary, -1px -1px 0 $color-violet-primary;
 
-  color: $color-white;
+  color: $color-white-primary;
 }
 
 .hero__text {
@@ -49,9 +49,13 @@
 .hero__input {
   width: 100%;
   padding: 17px 130px 17px 69px;
-
-  border: 1px solid #e0e3eb;
+  outline: none;
+  border: 1px solid $color-white-third;
   border-radius: 32px;
+
+  &:focus {
+    border-color: $color-green-primary;
+  }
 }
 
 .hero__input-icon {
@@ -60,7 +64,7 @@
   left: 24px;
   transform: translateY(-50%);
 
-  fill: $color-orange;
+  fill: $color-orange-primary;
 }
 
 .hero__input-button {
@@ -76,8 +80,8 @@
 
   border: none;
   border-radius: 32px;
-  background: #10b981;
-  color: $color-white;
+  background: $color-green-secondary;
+  color: $color-white-primary;
   transition: background-color 250ms $cubic-bezier;
 
   &::after {
@@ -94,26 +98,11 @@
   }
 
   &:hover {
-    background-color: $color-button-dark;
+    background-color: $color-green-primary;
   }
 }
 
-.hero__sub-titel {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 2;
-
-  color: #888b97;
-}
-
-.color-blur {
-  position: absolute;
-  top: -90px;
-  left: 0;
-  z-index: -1;
-}
-
-.hero__partner {
+.block-partner {
   display: none;
 
   @media screen and (min-width: 1200px) {
@@ -121,10 +110,25 @@
   }
 }
 
-.partner-logo {
+.block-partner__titel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+
+  color: $color-violet-fourth;
+}
+
+.block-partner__logo {
   display: flex;
   justify-content: space-between;
   column-gap: 15px;
   flex-wrap: wrap;
   max-width: 427px;
+}
+
+.color-blur {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  z-index: -1;
 }

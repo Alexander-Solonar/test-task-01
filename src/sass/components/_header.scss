@@ -22,7 +22,7 @@
 }
 
 .logo-icon--orange {
-  fill: $color-orange;
+  fill: $color-orange-primary;
 }
 
 .logo-icon--green {
@@ -30,7 +30,7 @@
   top: 4px;
   left: 4px;
 
-  fill: $color-green;
+  fill: $color-green-third;
 }
 
 .menu {
@@ -64,22 +64,22 @@
   font-size: 14px;
   line-height: 1.28;
 
-  border: 1px solid $bg-border;
+  border: 1px solid $color-dark-fourth;
   border-radius: 32px;
-  color: $bg-light;
-  background-color: $bg-button;
+  color: $color-white-secondary;
+  background-color: $color-dark-third;
   transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier;
 
   &:hover,
   &:focus {
-    color: $color-button-dark;
-    background-color: $color-button-light;
+    color: $color-green-primary;
+    background-color: $color-green-fourth;
   }
 }
 
 .navigation__link--menu {
   position: relative;
-  padding-right: 44px;
+  padding-right: 40px;
 
   &::after {
     content: '';
@@ -104,9 +104,10 @@
   flex-direction: column;
   row-gap: 12px;
   padding: 20px;
-  color: $color-violet-primary;
   border-radius: 10px;
-  background-color: $color-white;
+  z-index: 9;
+  color: $color-violet-primary;
+  background-color: $color-white-primary;
 }
 
 .btn-open-modal {
@@ -119,13 +120,13 @@
 
   border-radius: 32px;
   border: none;
-  color: $color-button-dark;
-  background: $color-button-light;
+  color: $color-green-primary;
+  background: $color-green-fourth;
 
   &:hover,
   &:focus {
-    color: $color-button-light;
-    background-color: $color-button-dark;
+    color: $color-green-fourth;
+    background-color: $color-green-primary;
   }
 }
 
@@ -141,7 +142,7 @@
 
   &:hover,
   &:focus {
-    fill: $color-button-dark;
+    fill: $color-green-primary;
   }
 
   @media screen and (min-width: 768px) {
