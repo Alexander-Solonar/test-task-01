@@ -1,0 +1,154 @@
+.section-readyToSell {
+  position: relative;
+  padding-top: 130px;
+}
+
+.slogan--section-readyToSell {
+  top: 30px;
+}
+
+.vector-yellow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 438px;
+  height: 494px;
+  z-index: -1;
+}
+
+.vector-red {
+  position: absolute;
+  right: 0;
+  top: -122px;
+  width: 438px;
+  height: 494px;
+  z-index: -1;
+}
+
+.readyToSell-swiper {
+  min-height: 459px;
+}
+
+.readyToSell-swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  padding-bottom: 43px;
+
+  @media screen and (max-width: 1020px) {
+    justify-content: center;
+  }
+}
+
+.description-box {
+  padding-top: 12px;
+  max-width: 524px;
+}
+
+.description__title {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: $color-violet-primary;
+}
+
+.description__text {
+  max-width: 413px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $color-violet-third;
+  opacity: 0.75;
+}
+
+.detail-box {
+  max-width: 440px;
+  margin-bottom: 66px;
+}
+
+.detail__title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $color-violet-primary;
+  opacity: 0.75;
+}
+
+.detail__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+}
+.detail__item {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: $color-blue-third;
+  fill: $color-blue-third;
+}
+
+.manager-box {
+  display: flex;
+  align-items: center;
+  column-gap: 57px;
+}
+
+.manager-box__button {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+
+  font-size: 14px;
+  line-height: 1.57;
+  color: $color-white-primary;
+  fill: $color-white-primary;
+  background: $color-green-secondary;
+  border-radius: 32px;
+  transition: background-color 250ms $cubic-bezier;
+
+  &:hover {
+    background-color: $color-green-primary;
+  }
+}
+
+.media-box {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 416px;
+}
+
+.media-box-image {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  align-items: end;
+  justify-content: center;
+  left: -40px;
+  bottom: -43px;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.media-box-image-middle {
+  height: 168px;
+}
+
+.media-box-image-litle {
+  display: flex;
+  column-gap: 8px;
+  height: 80px;
+}

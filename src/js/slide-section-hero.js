@@ -5,7 +5,6 @@ const heroSwiperWrapper = document.querySelector('.hero__swiper-wrapper');
 
 heroSwiperWrapper.innerHTML = sliderHero.reduce(
   (html, { like, description, image }) => {
-    console.log(image);
     return (
       html +
       `<div class="hero__swiper-slide swiper-slide">

@@ -1,0 +1,171 @@
+.section-recommendation {
+  padding-top: 125px;
+}
+
+.recommendation__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.recommendation__title {
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: $color-violet-primary;
+}
+
+.recommendation__filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  column-gap: 32px;
+  row-gap: 20px;
+}
+
+.recommendation__filter-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 10px 20px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55;
+
+  cursor: pointer;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+
+  color: $color-violet-fourth;
+  fill: $color-violet-fourth;
+  background: $color-white-third;
+  transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier,
+    fill 250ms $cubic-bezier;
+
+  &:hover {
+    color: $color-green-secondary;
+    fill: $color-green-secondary;
+    background: $color-green-fourth;
+  }
+}
+
+.active {
+  color: $color-green-secondary;
+  fill: $color-green-secondary;
+  background: $color-green-fourth;
+}
+
+.recommendation-swiper {
+  position: relative;
+  max-width: 1323px;
+  right: 0;
+}
+
+.recommendation-swiper-slide {
+  display: inline-flex;
+  flex-direction: column;
+  width: auto;
+  row-gap: 24px;
+}
+
+.recommendation__slide-img {
+  position: relative;
+  width: 340px;
+  height: 382px;
+}
+
+.recommendation__slide-img img {
+  border-radius: 24px;
+}
+
+.recommendation__slide-category {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 10px 15px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: capitalize;
+
+  border-radius: 32px;
+  color: $color-red-primary;
+  fill: $color-red-primary;
+  background: $color-red-secondary;
+}
+
+.recommendation__slide-category--popular {
+  color: $color-red-primary;
+  fill: $color-red-primary;
+  background: $color-red-secondary;
+}
+
+.recommendation__slide-category--new-house {
+  color: $color-blue-secondary;
+  fill: $color-blue-secondary;
+  background: $color-blue-fourth;
+}
+
+.recommendation__slide-category--best-deals {
+  color: $color-green-primary;
+  fill: $color-green-primary;
+  background: $color-green-fourth;
+}
+
+.recommendation__slide-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33;
+  color: $color-blue-primary;
+}
+
+.recommendation__slide-cost {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: $color-blue-third;
+}
+
+.recommendation-btn {
+  display: flex;
+  margin-left: auto;
+  column-gap: 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.recommendation-swiper-button-next,
+.recommendation-swiper-button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 52px;
+  cursor: pointer;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+
+  fill: $color-white-primary;
+  background-color: $color-green-secondary;
+}
+
+.swiper-button-disabled {
+  pointer-events: none;
+  fill: $color-blue-third;
+  background-color: $color-white-third;
+}

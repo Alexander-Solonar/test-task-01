@@ -1,7 +1,6 @@
 .section-hero {
   position: relative;
   padding-top: 95px;
-  padding-bottom: 120px;
   min-height: 634px;
 }
 
@@ -71,8 +70,11 @@
   position: absolute;
   top: 50%;
   right: 2px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   transform: translateY(-50%);
-  padding: 13px 44px 13px 16px;
+  padding: 13px 16px;
   cursor: pointer;
 
   font-size: 14px;
@@ -82,20 +84,8 @@
   border-radius: 32px;
   background: $color-green-secondary;
   color: $color-white-primary;
+  fill: $color-white-primary;
   transition: background-color 250ms $cubic-bezier;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 40%;
-    right: 24px;
-    width: 10px;
-    height: 10px;
-
-    border-top: 2px solid;
-    border-right: 2px solid;
-    transform: rotate(45deg);
-  }
 
   &:hover {
     background-color: $color-green-primary;
