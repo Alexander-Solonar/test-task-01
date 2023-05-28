@@ -29,8 +29,8 @@ const createMarkup = () => {
   let newClass = null;
 
   const data = dataRocomend.filter(({ alt }) => alt === filter);
-  SwiperWrapperEl.innerHTML = data.reduce((html, slider) => {
-    const { image, alt, role, title, price, avatar, name, location } = slider;
+  SwiperWrapperEl.innerHTML = data.reduce((html, slide) => {
+    const { image, alt, role, title, price, avatar, name, location } = slide;
 
     if (role === 'New house') {
       iconCategory = 'icon-house';
@@ -93,4 +93,5 @@ new Swiper('.recommendation-swiper', {
 
   slidesPerView: 'auto',
   spaceBetween: 40,
+  simulateTouch: false,
 });

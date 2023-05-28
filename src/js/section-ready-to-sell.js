@@ -6,7 +6,7 @@ const SwiperWrapperReadyEl = document.querySelector(
   '.readyToSell-swiper-wrapper'
 );
 
-SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, data) => {
+SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, slide) => {
   const {
     type,
     bedrooms,
@@ -19,7 +19,7 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, data) => {
     bigImage,
     litleImage,
     avatar,
-  } = data;
+  } = slide;
 
   return (
     html +
@@ -62,19 +62,19 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, data) => {
       <div class="manager-box">
        
       <div class="card-user">
-      <div class="card-user__avatar">
-        <img
-          loading=lazy
-          src="${avatar}"
-          alt="user-avatar"
-          width="56" 
-        />
+        <div class="card-user__avatar">
+          <img
+            loading=lazy
+            src="${avatar}"
+            alt="user-avatar"
+            width="56" 
+          />
+        </div>
+        <div>
+          <h4 class="card-user__name">${name}</h4>
+          <p class="card-user__text">${position}</p>
+        </div>
       </div>
-      <div>
-        <h4 class="card-user__name">${name}</h4>
-        <p class="card-user__text">${position}</p>
-      </div>
-    </div>
         <a class="manager-box__button" href="tel:+380961111111">
           <svg width="24" height="24">
             <use href="${icons}#icon-call"></use>
@@ -85,6 +85,7 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, data) => {
     </div>
     <div class="media-box">
       <img
+      loading=lazy
       src="${bigImage}"
       width="488"
       height="416
@@ -93,6 +94,7 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, data) => {
       <div class="media-box-image">
         <div class="media-box-image-middle">
           <img
+            loading=lazy
             src="${middleImage}"
             width="296"
             alt="${type}"
@@ -100,11 +102,13 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, data) => {
         </div>
         <div class="media-box-image-litle">
           <img
+            loading=lazy
             src="${litleImage}"
             width="96"
             alt="${type}"
           />
           <img
+            loading=lazy
             src="${litleImage}"
             width="96"
             alt="${type}"
@@ -122,7 +126,7 @@ const swiper = new Swiper('.readyToSell-swiper', {
 
   centeredSlides: true,
   spaceBetween: 40,
-
+  simulateTouch: false,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,

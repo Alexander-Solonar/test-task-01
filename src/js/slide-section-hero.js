@@ -1,9 +1,9 @@
-import sliderHero from '../data/sliderHero';
+import dataHero from '../data/sliderHero';
 import Swiper from '/node_modules/swiper/swiper-bundle.min';
 
 const heroSwiperWrapper = document.querySelector('.hero__swiper-wrapper');
 
-heroSwiperWrapper.innerHTML = sliderHero.reduce(
+heroSwiperWrapper.innerHTML = dataHero.reduce(
   (html, { like, description, image }) => {
     return (
       html +
@@ -32,6 +32,7 @@ new Swiper('.hero__swiper', {
   centeredSlides: true,
   spaceBetween: 30,
   width: 'auto',
+  simulateTouch: false,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
