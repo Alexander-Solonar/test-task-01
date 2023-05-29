@@ -1,15 +1,20 @@
-const menuBtn = document.querySelector('[open-sub-menu]');
-const menu = document.querySelector('[sub-menu]');
+const btnOpenSubMenu = document.querySelector('[open-sub-menu]');
+const subMenu = document.querySelector('[sub-menu]');
 
-(() => {
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('visually-hidden');
-    menuBtn.classList.toggle('is-open');
-  });
+document.addEventListener('click', showSubList);
 
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    menu.classList.add('visually-hidden');
-    menuBtn.classList.remove('is-open');
-  });
-})();
+window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  if (!e.matches) return;
+  subMenu.classList.add('visually-hidden');
+  btnOpenSubMenu.classList.remove('is-open');
+});
+
+function showSubList(event) {
+  if (event.target.hasAttribute('open-sub-menu')) {
+    subMenu.classList.toggle('visually-hidden');
+    btnOpenSubMenu.classList.toggle('is-open');
+  } else if (!subMenu.classList.contains('visually-hidden')) {
+    subMenu.classList.toggle('visually-hidden');
+    btnOpenSubMenu.classList.toggle('is-open');
+  }
+}

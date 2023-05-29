@@ -27,6 +27,7 @@
 }
 
 .navigation__list {
+  position: relative;
   display: flex;
   column-gap: 25px;
 }
@@ -75,6 +76,7 @@
 
 .navigation__sub-menu {
   position: absolute;
+  top: 40px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;

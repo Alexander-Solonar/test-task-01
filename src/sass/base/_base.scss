@@ -21,9 +21,10 @@ body {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url('../images/image-hero/main-image.jpg');
+  background-image: url(../images/image-hero/main-image.jpg),
+    url(../images/blurs/color-blur.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right, top left;
 }
 
 .container {
