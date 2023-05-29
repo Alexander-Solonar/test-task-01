@@ -26,6 +26,52 @@ img {
   object-fit: cover;
 }
 
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $color-violet-primary;
+}
+
+.logo-icon--orange {
+  fill: $color-orange-primary;
+}
+
+.logo-icon--green {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  fill: $color-green-third;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: 13px 16px;
+  cursor: pointer;
+
+  font-size: 14px;
+  line-height: 1.57;
+  color: $color-white-primary;
+  fill: $color-white-primary;
+  border: none;
+  background: $color-green-secondary;
+  border-radius: 32px;
+  transition: background-color 250ms $cubic-bezier;
+
+  &:hover {
+    background-color: $color-green-primary;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -57,6 +103,19 @@ img {
     height: 1px;
     background-color: $color-orange-primary;
     transform: translateY(-50%);
+  }
+}
+
+.slogan--center {
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
   }
 }
 

@@ -75,7 +75,7 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, slide) => {
           <p class="card-user__text">${position}</p>
         </div>
       </div>
-        <a class="manager-box__button" href="tel:+380961111111">
+        <a class="button" href="tel:+380961111111">
           <svg width="24" height="24">
             <use href="${icons}#icon-call"></use>
           </svg>

@@ -1,6 +1,9 @@
 .section-readyToSell {
   position: relative;
   padding-top: 130px;
+
+  background: url('../images/blurs/vector-red.png') right -50px no-repeat,
+    url('../images/blurs/vector-yellow.png') right 20px no-repeat;
 }
 
 .slogan--section-readyToSell {
@@ -103,24 +106,6 @@
   display: flex;
   align-items: center;
   column-gap: 57px;
-}
-
-.manager-box__button {
-  display: flex;
-  align-items: center;
-  padding: 13px 16px;
-
-  font-size: 14px;
-  line-height: 1.57;
-  color: $color-white-primary;
-  fill: $color-white-primary;
-  background: $color-green-secondary;
-  border-radius: 32px;
-  transition: background-color 250ms $cubic-bezier;
-
-  &:hover {
-    background-color: $color-green-primary;
-  }
 }
 
 .media-box {

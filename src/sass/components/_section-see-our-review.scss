@@ -2,19 +2,6 @@
   padding-top: 120px;
 }
 
-.seeOurReview__slogan {
-  left: 50%;
-  transform: translateX(-50%);
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: -50%;
-    transform: translateX(-50%);
-  }
-}
-
 .seeOurReview__title {
   margin-top: 12px;
   margin-bottom: 40px;

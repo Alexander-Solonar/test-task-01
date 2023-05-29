@@ -41,7 +41,6 @@ SwiperWrapperReviewEl.innerHTML = dataSeeOurReview.reduce((html, slide) => {
 }, '');
 
 new Swiper('.seeOurReview__swiper', {
-  //   loop: true,
   initialSlide: 1,
   slidesPerView: 'auto',
   spaceBetween: 56,

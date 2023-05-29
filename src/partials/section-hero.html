@@ -10,25 +10,25 @@
         Everything you need about finding your place to live will be here, where
         it will be easier for you
       </p>
-
-      <div class="box-hero-input">
-        <input
-          class="hero__input"
-          type="tel"
-          name="tell"
-          id="user-phone"
-          placeholder="Search for the location you want!"
-        />
-        <svg class="hero__input-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-location"></use>
-        </svg>
-        <button class="hero__input-button" type="submit">
-          Search
-          <svg width="24" height="24">
-            <use href="./images/icons.svg#icon-eva_arrow"></use>
+      <form>
+        <div class="box-hero-input">
+          <input
+            class="hero__input"
+            type="search"
+            name="search"
+            placeholder="Search for the location you want!"
+          />
+          <svg class="hero__input-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-location"></use>
           </svg>
-        </button>
-      </div>
+          <button class="hero__input-button" type="submit">
+            Search
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-eva_arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
       <div class="block-partner">
         <h3 class="block-partner__titel">Our Partnership</h3>
         <div class="block-partner__logo">
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="color-blur">
-      <img src="./images/image-hero/color-blur.png" alt="Gradient" />
+      <img src="./images/blurs/color-blur.png" alt="Gradient" />
     </div>
   </div>
   <include src="./partials/slide-section-hero.html"></include>
