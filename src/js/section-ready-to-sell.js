@@ -1,6 +1,7 @@
 import Swiper from '/node_modules/swiper/swiper-bundle.min';
 import dataReady from '../data/sliderReady.json';
 import icons from '../images/icons.svg';
+import avatar from '../images/avatars/avatar-dianne.png';
 
 const SwiperWrapperReadyEl = document.querySelector(
   '.readyToSell-swiper-wrapper'
@@ -18,7 +19,6 @@ SwiperWrapperReadyEl.innerHTML = dataReady.reduce((html, slide) => {
     middleImage,
     bigImage,
     litleImage,
-    avatar,
   } = slide;
 
   return (

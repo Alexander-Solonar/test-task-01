@@ -1,13 +1,14 @@
 import Swiper from '/node_modules/swiper/swiper-bundle.min';
 import dataSeeOurReview from '../data/sliderOurReview.json';
 import icons from '../images/icons.svg';
+import avatar from '../images/avatars/avatar-dianne.png';
 
 const SwiperWrapperReviewEl = document.querySelector(
   '.seeOurReview__swiper-wrapper'
 );
 
 SwiperWrapperReviewEl.innerHTML = dataSeeOurReview.reduce((html, slide) => {
-  const { title, text, image, name, position, mark, avatar } = slide;
+  const { title, text, image, name, position, mark } = slide;
 
   return (
     html +

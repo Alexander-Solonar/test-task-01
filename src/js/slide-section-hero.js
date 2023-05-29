@@ -1,17 +1,17 @@
 import dataHero from '../data/sliderHero';
 import Swiper from '/node_modules/swiper/swiper-bundle.min';
+import avatar from '../images/avatars/avatar-dianne.png';
 
 const heroSwiperWrapper = document.querySelector('.hero__swiper-wrapper');
 
-heroSwiperWrapper.innerHTML = dataHero.reduce(
-  (html, { like, description, image }) => {
-    return (
-      html +
-      `<div class="hero__swiper-slide swiper-slide">
+heroSwiperWrapper.innerHTML = dataHero.reduce((html, { like, description }) => {
+  return (
+    html +
+    `<div class="hero__swiper-slide swiper-slide">
          <div class="box-inform">
             <img
                class="box-inform__user-avatar"
-                src="${image}"
+                src="${avatar}"
                 alt="user-avatar"
                 width="54"
              />
@@ -21,10 +21,8 @@ heroSwiperWrapper.innerHTML = dataHero.reduce(
           </div>
         </div>
       </div>`
-    );
-  },
-  ''
-);
+  );
+}, '');
 
 new Swiper('.hero__swiper', {
   loop: true,

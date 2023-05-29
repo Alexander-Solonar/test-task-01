@@ -61,6 +61,10 @@
   background: $color-green-fourth;
 }
 
+.recommendation__filter-icon {
+  pointer-events: none;
+}
+
 .recommendation-swiper {
   position: relative;
   max-width: 1323px;

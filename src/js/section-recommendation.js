@@ -1,6 +1,7 @@
 import Swiper from '/node_modules/swiper/swiper-bundle.min';
 import dataRocomend from '../data/sliderRecomend.json';
 import icons from '../images/icons.svg';
+import avatar from '../images/avatars/avatar-dianne.png';
 
 const SwiperWrapperEl = document.querySelector(
   '.recommendation-swiper-wrapper'
@@ -30,7 +31,7 @@ const createMarkup = () => {
 
   const data = dataRocomend.filter(({ alt }) => alt === filter);
   SwiperWrapperEl.innerHTML = data.reduce((html, slide) => {
-    const { image, alt, role, title, price, avatar, name, location } = slide;
+    const { image, alt, role, title, price, name, location } = slide;
 
     if (role === 'New house') {
       iconCategory = 'icon-house';
@@ -90,7 +91,6 @@ new Swiper('.recommendation-swiper', {
     nextEl: '.recommendation-swiper-button-next',
     prevEl: '.recommendation-swiper-button-prev',
   },
-
   slidesPerView: 'auto',
   spaceBetween: 40,
   simulateTouch: false,
