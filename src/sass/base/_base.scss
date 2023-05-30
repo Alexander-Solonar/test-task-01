@@ -22,9 +22,11 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background-image: url(../images/image-hero/main-image.jpg),
-    url(../images/blurs/color-blur.png);
+    url(../images/blurs/color-blur-header.png),
+    url(../images/blurs/color-blur-footer.png),
+    url(../images//blurs/color-blur-sect-ready.png);
   background-repeat: no-repeat;
-  background-position: top right, top left;
+  background-position: top right, top left, bottom right, bottom 63% right;
 }
 
 .container {
